@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "y44EBl+gpa6HjSXHy3mH3iynnk34S7J0Hw3htnF6+4VE3H1mcoyFl88oeqMHC8n7JNSLfF5rPbQvTTyZfG/Qcw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nekqg\\source\\repos\\ConsoleApp2\\ConsoleApp2\\It-planetaApi.Net.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nekqg\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\nekqg\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\nekqg\\.nuget\\packages\\newtonsoft.json.schema\\3.0.14\\newtonsoft.json.schema.3.0.14.nupkg.sha512",
+    "C:\\Users\\nekqg\\.nuget\\packages\\npgsql\\7.0.1\\npgsql.7.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
