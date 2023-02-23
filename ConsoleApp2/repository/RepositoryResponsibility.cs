@@ -29,7 +29,7 @@ namespace It_PlanetaApi.repository
             {
                 throw new NpgsqlRowNotFoundException();
             }
-            //
+            
             var resultType = typeof(TResultObject);
             var properties = resultType.GetProperties();
             foreach (var property in properties)
