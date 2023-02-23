@@ -1,12 +1,18 @@
-﻿using System;
+﻿using It_PlanetaApi.repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace It-planetaApi.Net.service
+namespace It_PlanetaApi.service
 {
-    internal class ServiceResponsibility
-{
-}
+    public class ServiceResponsibility
+    {
+        protected readonly Repository _repository;
+        public ServiceResponsibility(Repository repository) 
+        {
+            _repository= repository;
+        }
+    }
 }

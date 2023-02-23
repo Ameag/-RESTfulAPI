@@ -1,12 +1,15 @@
-﻿using System;
+﻿using It_PlanetaApi.models.account;
+using It_PlanetaApi.repository.postgres;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace It-planetaApi.Net.service.account
+namespace It_PlanetaApi.service.account
 {
-    internal interface IAccount
-{
-}
+    public interface IAccount
+    {
+        public PostgresAccount Registration(RegistrationInput props);
+    }
 }

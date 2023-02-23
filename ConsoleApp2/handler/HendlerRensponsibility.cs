@@ -1,12 +1,19 @@
-﻿using System;
+﻿using It_PlanetaApi.service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace It-planetaApi.Net.handler
+namespace It_PlanetaApi.handler
 {
-    internal class HendlerRensponsibiliti
-{
-}
+    
+    public class HendlerRensponsibility
+    {
+        protected readonly Service _service;
+        public HendlerRensponsibility(Service service)
+        {
+            _service = service;
+        }
+    }      
 }

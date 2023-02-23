@@ -10,7 +10,7 @@ using repository.postgres;
 
 namespace It_PlanetaApi.repository
 {
-    internal class Repository
+    public class Repository
     {
         public IAccount Account;
 

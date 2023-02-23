@@ -4,9 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace It-planetaApi.Net.models.account
+namespace It_PlanetaApi.models.account
 {
-    internal class RegistrationOutput
-{
-}
+    public class RegistrationOutput
+    {
+        public long id { get; set; }
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public string email { get; set; }
+
+    }
 }

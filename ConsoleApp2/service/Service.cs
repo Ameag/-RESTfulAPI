@@ -1,12 +1,20 @@
-﻿using System;
+﻿using It_PlanetaApi.repository;
+using It_PlanetaApi.service.account;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace It-planetaApi.Net.service
+namespace It_PlanetaApi.service
 {
-    internal class Service
-{
-}
+    public class Service
+    {
+        public IAccount Account;
+
+        public Service(Repository repository) 
+        {
+            Account = new Account(repository);
+        }
+    }
 }

@@ -1,12 +1,24 @@
-﻿using System;
+﻿using It_PlanetaApi.handler;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace It-planetaApi.Net.server
+namespace It_PlanetaApi.server
 {
-    internal class Router
-{
-}
+    public class Router
+    {
+        private Handler handler;
+
+        public Router(Handler handler)
+        {
+            
+        }
+
+        public void HandleRequest(RequestContext context)
+        {
+            // определить в какую функцию отправить запрос на обработку 
+        }
+    }
 }

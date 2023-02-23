@@ -1,12 +1,31 @@
-﻿using System;
+﻿using It_PlanetaApi.models.account;
+using It_PlanetaApi.service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace It-planetaApi.Net.handler.account
+namespace It_PlanetaApi.handler.account
 {
-    internal class Account
-{
-}
+    public class Account : HendlerRensponsibility, IAccount
+    {
+        public Account(Service service) : base(service)
+        {
+        }
+
+        public void Registration(RequestContext context)
+        {
+            var input = context.GetBody<RegistrationInput>();
+            var account = _service.Account.Registration(input);
+            var output = new RegistrationOutput
+            {
+                id = account.Id,
+                firstName= account.FirstName,
+                lastName= account.LastName,
+                email= account.Email
+            };
+            context.SendCreated(output);
+        }
+    }
 }

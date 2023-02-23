@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace It-planetaApi.Net.handler.account
+namespace It_PlanetaApi.handler.account
 {
-    internal interface IAccount
-{
-}
+    public interface IAccount
+    {
+        public void Registration(RequestContext context);
+    }
 }

@@ -12,6 +12,10 @@ using It_PlanetaApi.config;
 using It_PlanetaApi.repository;
 using repository.postgres;
 using repository.It_PlanetaApi.Account;
+using It_PlanetaApi.service;
+using System.Reflection.Metadata;
+using It_PlanetaApi.handler;
+using It_PlanetaApi.server;
 
 const string CONFIG_FILE_PATH = "config/config.json";
 //загрузка конфига
@@ -26,9 +30,12 @@ var database = new PostgresDatabase(config);
 // создание слоя handler, service, repository
 
 var repository = new Repository(database);
+var service = new Service(repository);
+var handler = new Handler(service);
 
-var account = repository.Account.Get("nekqga@gmail.com", "1234");
-Console.WriteLine(account.Email);
+var router = new Router(handler);
+var server = new Server(config,router);
+server.Run();
 
 // запустить сервер
 
