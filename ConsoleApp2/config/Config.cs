@@ -50,7 +50,11 @@ namespace It_PlanetaApi.config
         /// <returns>Порт сервера</returns>
         public string GetPort() 
         {
-            return "";
+            if (_structure == null)
+            {
+                throw new NullReferenceException("config not load");
+            }
+            return _structure.Server.Port.ToString();
         }
     }
 }

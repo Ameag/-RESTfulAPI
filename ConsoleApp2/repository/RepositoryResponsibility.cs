@@ -23,7 +23,7 @@ namespace It_PlanetaApi.repository
                 command.Parameters.Add(new NpgsqlParameter { Value = arg });
             }
 
-            var queryReader = command.ExecuteReader();
+            using var queryReader = command.ExecuteReader();
             var isMoveCursorSuccess = queryReader.Read();
             if (!isMoveCursorSuccess)
             {
@@ -51,6 +51,7 @@ namespace It_PlanetaApi.repository
                     }
                 }
             }
+
             Console.WriteLine();
 
             return result;

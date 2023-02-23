@@ -1,4 +1,5 @@
-﻿using It_PlanetaApi.repository;
+﻿using It_PlanetaApi.Exceptions;
+using It_PlanetaApi.repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,12 @@ namespace It_PlanetaApi.service
         public ServiceResponsibility(Repository repository) 
         {
             _repository= repository;
+        }
+        protected void ThrowInvalidRequestField(string? template, params object?[] args)
+        {
+            var message = String.Format(template??"", args);
+            throw new InvalidRequestFieldException(message);
+            
         }
     }
 }

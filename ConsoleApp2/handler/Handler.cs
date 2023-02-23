@@ -1,4 +1,5 @@
 ﻿using It_PlanetaApi.handler.account;
+using It_PlanetaApi.server;
 using It_PlanetaApi.service;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,15 @@ namespace It_PlanetaApi.handler
         public Handler(Service service) 
         {
             Account = new Account(service);
+        }
+
+        public Router GetRouter() 
+        { 
+            var router = new Router();
+            router.POST("/registration", Account.Registration);
+            //router.GET("/accounts/{accountId}", Account.Get);
+
+            return router;
         }
     }
 }
