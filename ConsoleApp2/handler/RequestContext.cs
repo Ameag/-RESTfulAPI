@@ -45,7 +45,7 @@ namespace It_PlanetaApi.handler
             return _request.HttpMethod;
         }
 
-        public void SendCreated(RegistrationOutput output)
+        public void SendCreated(object output)
         {
             SendRequest(output,HttpStatusCode.Created);
         }

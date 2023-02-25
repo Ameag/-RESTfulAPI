@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace It_PlanetaApi.repository.postgres
+namespace It_PlanetaApi.repository.account
 {
     public class PostgresAccount
     {

@@ -1,6 +1,7 @@
 ﻿using It_PlanetaApi.repository.postgres.queris;
 using It_PlanetaApi.repository.postgres.queris.account;
-using repository.It_PlanetaApi.Account;
+using It_PlanetaApi.repository.postgres.queris.location;
+using repository.It_PlanetaApi.account;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +13,12 @@ namespace It_PlanetaApi.repository.postgres.queris
     public class Queries
     {
         public IQueriesAccount Account;
+        public IQueriesLocation Location;
 
         public Queries()
         {
             Account = new PostgresQueriesAccount();
+            Location = new PostgresQueriesLocation();
         }
     }
 

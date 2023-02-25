@@ -1,6 +1,7 @@
 ﻿using It_PlanetaApi.Exceptions;
 using It_PlanetaApi.models.account;
 using It_PlanetaApi.repository;
+using It_PlanetaApi.repository.account;
 using It_PlanetaApi.repository.postgres;
 using System;
 using System.Collections.Generic;

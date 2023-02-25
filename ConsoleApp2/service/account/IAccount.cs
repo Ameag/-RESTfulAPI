@@ -1,5 +1,5 @@
 ﻿using It_PlanetaApi.models.account;
-using It_PlanetaApi.repository.postgres;
+using It_PlanetaApi.repository.account;
 using System;
 using System.Collections.Generic;
 using System.Linq;

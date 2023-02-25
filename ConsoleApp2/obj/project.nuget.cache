@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y44EBl+gpa6HjSXHy3mH3iynnk34S7J0Hw3htnF6+4VE3H1mcoyFl88oeqMHC8n7JNSLfF5rPbQvTTyZfG/Qcw==",
+  "dgSpecHash": "P93N5RIP0zKQEHm+j//yVZy4gxXHcVYgReNGMun/E/l7smLRGpkhrGTNO8FYpy3AuI+BhwgHeeKNlUpVjjTA0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nekqg\\source\\repos\\ConsoleApp2\\ConsoleApp2\\It-planetaApi.Net.csproj",
+  "projectFilePath": "C:\\Users\\nekqg\\source\\repos\\ConsoleApp2\\ConsoleApp2\\It_PlanetaApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nekqg\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\nekqg\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",

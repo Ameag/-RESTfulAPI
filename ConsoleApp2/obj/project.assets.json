@@ -211,9 +211,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nekqg\\source\\repos\\ConsoleApp2\\ConsoleApp2\\It-planetaApi.Net.csproj",
-      "projectName": "It-planetaApi.Net",
-      "projectPath": "C:\\Users\\nekqg\\source\\repos\\ConsoleApp2\\ConsoleApp2\\It-planetaApi.Net.csproj",
+      "projectUniqueName": "C:\\Users\\nekqg\\source\\repos\\ConsoleApp2\\ConsoleApp2\\It_PlanetaApi.csproj",
+      "projectName": "It_PlanetaApi",
+      "projectPath": "C:\\Users\\nekqg\\source\\repos\\ConsoleApp2\\ConsoleApp2\\It_PlanetaApi.csproj",
       "packagesPath": "C:\\Users\\nekqg\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\nekqg\\source\\repos\\ConsoleApp2\\ConsoleApp2\\obj\\",
       "projectStyle": "PackageReference",

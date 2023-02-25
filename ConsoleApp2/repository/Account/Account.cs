@@ -1,5 +1,5 @@
 ﻿using It_PlanetaApi.repository;
-using It_PlanetaApi.repository.postgres;
+using It_PlanetaApi.repository.account;
 using It_PlanetaApi.repository.postgres.queris;
 using Npgsql;
 using repository.postgres;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace repository.It_PlanetaApi.Account
+namespace repository.It_PlanetaApi.account
 {
     public class Account : RepositoryResponsibility, IAccount
     {

@@ -11,7 +11,7 @@ using Npgsql;
 using It_PlanetaApi.config;
 using It_PlanetaApi.repository;
 using repository.postgres;
-using repository.It_PlanetaApi.Account;
+using repository.It_PlanetaApi.account;
 using It_PlanetaApi.service;
 using System.Reflection.Metadata;
 using It_PlanetaApi.handler;
