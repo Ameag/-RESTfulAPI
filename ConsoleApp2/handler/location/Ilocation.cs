@@ -8,6 +8,9 @@ namespace It_PlanetaApi.handler.location
 {
     public interface Ilocation 
     {
-        public void Create(RequestContext context) { }
+        public void Create(RequestContext context) 
+        { 
+
+        }
     }
 }
