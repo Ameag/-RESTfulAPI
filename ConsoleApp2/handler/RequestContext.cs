@@ -15,6 +15,7 @@ namespace It_PlanetaApi.handler
         private readonly HttpListenerContext _context;
         private readonly HttpListenerRequest _request;
         private readonly HttpListenerResponse _response;
+        private Dictionary<string, string> Params = new Dictionary<string, string>();
         public RequestContext(HttpListener listener)
         {
             _context = listener.GetContext();
@@ -70,6 +71,15 @@ namespace It_PlanetaApi.handler
         internal void SendNotFound()
         {
             SendRequest(null,HttpStatusCode.NotFound);
+        }
+
+        public string getParam(string key)
+        {
+            return key;
+        }
+        public void LoadParam(string key,string value)
+        {
+            Params.Add(key, value);
         }
     }
 }

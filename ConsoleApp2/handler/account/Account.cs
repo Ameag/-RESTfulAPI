@@ -14,6 +14,11 @@ namespace It_PlanetaApi.handler.account
         {
         }
 
+        public void GetInfo(RequestContext context)
+        {
+            
+        }
+
         public void Registration(RequestContext context)
         {
             var input = context.GetBody<RegistrationInput>();

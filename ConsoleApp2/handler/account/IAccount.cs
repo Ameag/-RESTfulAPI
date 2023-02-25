@@ -8,6 +8,7 @@ namespace It_PlanetaApi.handler.account
 {
     public interface IAccount
     {
+        public void GetInfo(RequestContext context);
         public void Registration(RequestContext context);
     }
 }

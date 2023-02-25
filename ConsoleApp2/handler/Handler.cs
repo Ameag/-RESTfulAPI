@@ -15,12 +15,12 @@ namespace It_PlanetaApi.handler
     {
         public readonly IAccount Account;
         public readonly Ilocation Location;
-        public readonly IAnimalType animalType;
+        public readonly IAnimalType AnimalType;
         public Handler(Service service) 
         {
             Account = new Account(service);
             Location = new Location(service);
-            animalType= new AnimalType(service);
+            AnimalType= new AnimalType(service);
         }
 
         public Router GetRouter() 
@@ -28,7 +28,8 @@ namespace It_PlanetaApi.handler
             var router = new Router();
             router.POST("/registration", Account.Registration);
             router.POST("/locations", Location.Create);
-            router.POST("/animals/types", animalType.Create);
+            router.POST("/animals/types", AnimalType.Create);
+            router.GET("/accounts/{accountId}", Account.GetInfo);
 
             return router;
         }
