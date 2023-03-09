@@ -12,5 +12,6 @@ namespace It_PlanetaApi.handler.location
         { 
 
         }
+        public void GetInfoLocation(RequestContext context) { }
     }
 }

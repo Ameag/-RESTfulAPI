@@ -28,5 +28,14 @@ namespace It_PlanetaApi.service.location
 
             return _repository.Location.Create((double)props.latitude, (double)props.longitude);
         }
+
+        public PostgresLocation GetInfoLocation(string param)
+        {
+            if(param == null||int.Parse(param)<=0)
+            {
+                ThrowInvalidRequestField("invalid pointId: {0}", param);
+            }
+            return _repository.Location.GetInfoAccount(param);
+        }
     }
 }

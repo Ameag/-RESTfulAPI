@@ -14,6 +14,18 @@ namespace It_PlanetaApi.handler.location
         {
 
         }
+        public void GetInfoLocation(RequestContext context)
+        {
+            var param = context.GetParam("pointId");
+            var location = _service.Location.GetInfoLocation(param);
+            var output = new CreateLocationOutput()
+            {
+                id = location.Id,
+                latitude = location.Latitude,
+                longitude = location.Longitude,
+            };
+            context.SendCreated(output);
+        }
         public void Create(RequestContext context)
         {
             var input = context.GetBody<CreateLocationInput>();

@@ -10,5 +10,6 @@ namespace It_PlanetaApi.repository.location
     public interface ILocation
     {
         public PostgresLocation Create(double latitude,double longitude);
+        public PostgresLocation GetInfoAccount(string param);
     }
 }

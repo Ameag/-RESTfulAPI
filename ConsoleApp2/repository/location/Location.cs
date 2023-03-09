@@ -20,5 +20,11 @@ namespace It_PlanetaApi.repository.location
             var query = Queries.Location.Create();
             return GetResultObject<PostgresLocation>(query, latitude, longitude);
         }
+
+        public PostgresLocation GetInfoAccount(string param)
+        {
+            var query = Queries.Location.GetInfoLocation();
+            return GetResultObject<PostgresLocation> (query, int.Parse(param));
+        }
     }
 }

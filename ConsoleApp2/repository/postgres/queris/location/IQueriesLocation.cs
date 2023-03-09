@@ -9,6 +9,7 @@ namespace It_PlanetaApi.repository.postgres.queris.location
     public interface IQueriesLocation
     {
         public string Create();
+        public string GetInfoLocation();
 
     }
 }

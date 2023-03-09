@@ -30,6 +30,7 @@ namespace It_PlanetaApi.handler
             router.POST("/locations", Location.Create);
             router.POST("/animals/types", AnimalType.Create);
             router.GET("/accounts/{accountId}", Account.GetInfo);
+            router.GET("/locations/{pointId}",Location.GetInfoLocation);
 
             return router;
         }

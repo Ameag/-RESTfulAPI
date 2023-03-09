@@ -12,5 +12,9 @@ namespace It_PlanetaApi.repository.postgres.queris.location
         {
             return "INSERT INTO \"LocationPoint\"(latitude,longitude) VALUES ($1,$2) RETURNING*";
         }
+        public string GetInfoLocation()
+        {
+            return "SELECT * FROM \"LocationPoint\" WHERE id = $1 ";
+        }
     }
 }

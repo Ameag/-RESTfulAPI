@@ -11,5 +11,6 @@ namespace It_PlanetaApi.service.location
     public interface ILocation
     {
         public PostgresLocation Create (CreateLocationInput props);
+        public PostgresLocation GetInfoLocation(string param);
     }
 }
