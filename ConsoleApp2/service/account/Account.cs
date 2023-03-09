@@ -43,6 +43,15 @@ namespace It_PlanetaApi.service.account
                 props.password);
         }
 
+        public PostgresAccount GetInfoAccount(string param)
+        {
+            if(param == null|| int.Parse(param)<=0)
+            {
+                ThrowInvalidRequestField("invalid param:{0}", param);
+            }
+            return _repository.Account.GetInfo(param);
+        }
+
         
     }
 }

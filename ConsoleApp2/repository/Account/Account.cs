@@ -30,5 +30,10 @@ namespace repository.It_PlanetaApi.account
             var query = Queries.Account.Get();
             return GetResultObject<PostgresAccount>(query,email, password);
         }
+        public PostgresAccount GetInfo(string param)
+        {
+            var query = Queries.Account.GetInfo();
+            return GetResultObject<PostgresAccount>(query,int.Parse(param));
+        }
     }
 }

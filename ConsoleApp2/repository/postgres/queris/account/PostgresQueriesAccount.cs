@@ -18,5 +18,10 @@ namespace It_PlanetaApi.repository.postgres.queris.account
         {
             return "SELECT * FROM \"Account\" WHERE email = $1 and password = $2";
         }
+
+        public string GetInfo()
+        {
+            return "SELECT * FROM \"Account\" WHERE id = $1";
+        }
     }
 }

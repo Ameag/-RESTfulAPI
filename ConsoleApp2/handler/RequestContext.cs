@@ -73,14 +73,19 @@ namespace It_PlanetaApi.handler
             SendRequest(null,HttpStatusCode.NotFound);
         }
 
-        public string getParam(string key)
+        public string GetParam(string key)
         {
-            if(!Params.ContainsKey(key))
+           
+            if (!Params.ContainsKey(key))
             {
-                throw RequestContextParamNotFound();
+                throw new RequestContextParamNotFound();
             }
             return Params[key];
+            
+            
         }
+
+       
         public void LoadParam(string key,string value)
         {
             Params.Add(key, value);

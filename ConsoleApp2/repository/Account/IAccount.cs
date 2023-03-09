@@ -11,6 +11,7 @@ namespace repository.It_PlanetaApi.account
     {
         public PostgresAccount Create(string firstName, string lastName, string email, string password);
         public PostgresAccount Get(string email, string password);
+        public PostgresAccount GetInfo(string param);
         
 
         

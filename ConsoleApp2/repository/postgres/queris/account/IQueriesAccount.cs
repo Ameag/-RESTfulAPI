@@ -10,5 +10,6 @@ namespace It_PlanetaApi.repository.postgres.queris
     {
         public string Create();
         public string Get();
+        public string GetInfo();
     }
 }

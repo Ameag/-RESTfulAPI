@@ -11,5 +11,6 @@ namespace It_PlanetaApi.service.account
     public interface IAccount
     {
         public PostgresAccount Registration(RegistrationInput props);
+        public PostgresAccount GetInfoAccount(string param);
     }
 }

@@ -16,7 +16,17 @@ namespace It_PlanetaApi.handler.account
 
         public void GetInfo(RequestContext context)
         {
-            
+            var param = context.GetParam("accountId");
+            var account = _service.Account.GetInfoAccount(param);
+            var output = new RegistrationOutput
+            {
+                id = account.Id,
+                firstName = account.FirstName,
+                lastName = account.LastName,
+                email = account.Email
+            };
+            context.SendCreated(output);
+
         }
 
         public void Registration(RequestContext context)
