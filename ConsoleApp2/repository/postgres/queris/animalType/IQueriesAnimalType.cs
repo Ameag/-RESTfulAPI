@@ -9,5 +9,6 @@ namespace It_PlanetaApi.repository.postgres.queris.animalType
     public interface IQueriesAnimalType
     {
         public string Create();
+        public string GetInfoType();
     }
 }

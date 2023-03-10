@@ -13,5 +13,6 @@ namespace It_PlanetaApi.service.animalType
     public interface IAnimalType
     {
         public PostgresAnimalType Create(CreateAnimalTypeInput props);
+        public PostgresAnimalType GetInfoType(string param);
     }
 }

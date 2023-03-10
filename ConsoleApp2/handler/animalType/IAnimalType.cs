@@ -9,5 +9,6 @@ namespace It_PlanetaApi.handler.animalType
     public interface IAnimalType
     {
         public void Create(RequestContext context) { }
+        public void GetInfoType(RequestContext context) { }
     }
 }

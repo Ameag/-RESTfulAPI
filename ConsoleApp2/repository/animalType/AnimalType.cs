@@ -22,5 +22,12 @@ namespace It_PlanetaApi.repository.animalType
             var query = Queries.animalType.Create();
             return GetResultObject<PostgresAnimalType>(query,value);
         }
+
+        public PostgresAnimalType GetInfoType(string param)
+        {
+            var query = Queries.animalType.GetInfoType();
+            return GetResultObject<PostgresAnimalType> (query,int.Parse(param));
+
+        }
     }
 }

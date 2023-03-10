@@ -15,6 +15,19 @@ namespace It_PlanetaApi.handler.animalType
         {
         }
 
+        public void GetInfoType(RequestContext context)
+        {
+            var param = context.GetParam("typeId");
+            var animalType = _service.AnimalType.GetInfoType(param);
+            var output = new CreateAnimalTypeOutput()
+            {
+                id = animalType.Id,
+                value = animalType.Value
+            };
+            context.SendCreated(output);
+
+        }
+
         public void Create(RequestContext context) 
         {
             var input = context.GetBody<CreateAnimalTypeInput>();

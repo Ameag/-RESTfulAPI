@@ -12,5 +12,6 @@ namespace It_PlanetaApi.repository.animalType
     public interface IAnimalType
     {
         public PostgresAnimalType Create(string value);
+        public PostgresAnimalType GetInfoType(string param);
     }
 }

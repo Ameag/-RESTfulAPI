@@ -12,5 +12,10 @@ namespace It_PlanetaApi.repository.postgres.queris.animalType
         {
             return "INSERT INTO \"AnimalType\"(value) VALUES ($1) RETURNING*";
         }
+
+        public string GetInfoType()
+        {
+            return "SELECT * FROM \"AnimalType\" WHERE id = $1";
+        }
     }
 }

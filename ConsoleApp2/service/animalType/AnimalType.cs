@@ -21,9 +21,18 @@ namespace It_PlanetaApi.service.animalType
         {
             if(props.value == null||props.value.Trim() == "")
             {
-                ThrowInvalidRequestField("invalid latitude: {0}", props.value);
+                ThrowInvalidRequestField("invalid type: {0}", props.value);
             }
             return _repository.AnimalType.Create(props.value);
+        }
+
+        public PostgresAnimalType GetInfoType(string param)
+        {
+            if(param==null||int.Parse(param) <= 0)
+            {
+                ThrowInvalidRequestField("invalid type: {0}", param);
+            }
+            return _repository.AnimalType.GetInfoType(param);
         }
     }
     
