@@ -17,7 +17,7 @@ namespace It_PlanetaApi.server.router
         {
             string[] splitCurrentEndPoint = currentEndPoint.Split('/');
             string[] splitEndPoint = EndPoint.Split('/');
-            for (int x = 0; x < splitEndPoint.Length; x++)
+            for (int x = 0; x < splitCurrentEndPoint.Length; x++)
             {
                 if(splitEndPoint[x].IndexOf('{')==-1)
                 {

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using It_PlanetaApi.repository.animal;
 using It_PlanetaApi.repository.animalType;
 using It_PlanetaApi.repository.location;
 using It_PlanetaApi.repository.postgres.queris;
@@ -17,6 +18,7 @@ namespace It_PlanetaApi.repository
         public IAccount Account;
         public ILocation Location;
         public IAnimalType AnimalType;
+        public IAnimal Animal;
 
         public Repository(PostgresDatabase database) 
         {
@@ -24,6 +26,7 @@ namespace It_PlanetaApi.repository
             Account = new Account(database, queries);
             Location = new Location(database, queries);
             AnimalType= new AnimalType(database, queries);
+            Animal = new Animal(database, queries);
         }
     }
 }

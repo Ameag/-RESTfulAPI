@@ -31,8 +31,8 @@ namespace It_PlanetaApi.handler
             var router = new Router();
             router.POST("/registration", Account.Registration);
             router.POST("/locations", Location.Create);
-            router.POST("/animals/types", AnimalType.Create);
             router.POST("/animals", Animal.Create);
+            router.POST("/animals/types", AnimalType.Create);
             router.GET("/accounts/{accountId}", Account.GetInfo);
             router.GET("/locations/{pointId}",Location.GetInfoLocation);
             router.GET("/animals/types/{typeId}",AnimalType.GetInfoType);

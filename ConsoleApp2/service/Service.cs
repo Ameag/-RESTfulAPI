@@ -1,5 +1,6 @@
 ﻿using It_PlanetaApi.repository;
 using It_PlanetaApi.service.account;
+using It_PlanetaApi.service.animal;
 using It_PlanetaApi.service.animalType;
 using It_PlanetaApi.service.location;
 using System;
@@ -15,12 +16,14 @@ namespace It_PlanetaApi.service
         public IAccount Account;
         public ILocation Location;
         public IAnimalType AnimalType;
+        public IAnimal Animal;
 
         public Service(Repository repository) 
         {
             Account = new Account(repository);
             Location= new Location(repository);
             AnimalType = new AnimalType(repository);
+            Animal= new Animal(repository);
         }
     }
 }

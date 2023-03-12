@@ -1,6 +1,7 @@
 ﻿
 using It_PlanetaApi.repository.postgres.queris;
 using It_PlanetaApi.repository.postgres.queris.account;
+using It_PlanetaApi.repository.postgres.queris.animal;
 using It_PlanetaApi.repository.postgres.queris.animalType;
 using It_PlanetaApi.repository.postgres.queris.location;
 using repository.It_PlanetaApi.account;
@@ -17,12 +18,15 @@ namespace It_PlanetaApi.repository.postgres.queris
         public IQueriesAccount Account;
         public IQueriesLocation Location;
         public IQueriesAnimalType animalType;
+        public IQueriesAnimal Animal;
+        
 
         public Queries()
         {
             Account = new PostgresQueriesAccount();
             Location = new PostgresQueriesLocation();
             animalType = new PostgresQueriesAnimalType();
+            Animal = new PostgresQueriesAnimal();
         }
     }
 

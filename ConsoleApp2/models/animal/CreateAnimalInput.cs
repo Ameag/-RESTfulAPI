@@ -8,13 +8,13 @@ namespace It_PlanetaApi.models.animal
 {
     public class CreateAnimalInput
     {
-        public long[]? id { get; set; }
-        public float? weight { get; set; }
-        public float? lenght { get; set; }
-        public float? height { get; set; }
-        public string? gender { get; set; }
-        public int? chipperId { get; set; }
-        public long? chippingLocationId { get; set; }
+        public List<long>? AnimalTipes { get; set; }
+        public float? Weight { get; set; }
+        public float? Length { get; set; }
+        public float? Height { get; set; }
+        public string? Gender { get; set; }
+        public int? ChipperId { get; set; }
+        public long? ChippingLocationId { get; set; }
 
     }
 }

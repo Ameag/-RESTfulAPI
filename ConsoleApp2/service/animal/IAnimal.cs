@@ -1,4 +1,6 @@
-﻿using It_PlanetaApi.repository.account;
+﻿using It_PlanetaApi.models.animal;
+using It_PlanetaApi.repository.account;
+using It_PlanetaApi.repository.animal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +11,6 @@ namespace It_PlanetaApi.service.animal
 {
     public interface IAnimal
     {
-       
+        public PostgresAnimal Create(CreateAnimalInput props);
     }
 }

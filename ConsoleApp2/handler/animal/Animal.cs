@@ -18,10 +18,20 @@ namespace It_PlanetaApi.handler.animal
         public void Create(RequestContext context) 
         {
             var input = context.GetBody<CreateAnimalInput>();
-            //var animal = _service.Animal.Create(input);
-            var output = new CreateAnimalOutput();
+            var animal = _service.Animal.Create(input);
+            var output = new CreateAnimalOutput()
             {
-               
+                Id = animal.Id,
+                Weight= animal.Weight,
+                Length = animal.Length,
+                Height= animal.Height,
+                Gender= animal.Gender,
+                LifeStatus= animal.LifeStatus,
+                ChippingDateTime= animal.ChippingDateTime,
+                ChipperId= animal.ChipperId,
+                ChippingLocationId= animal.ChippingLocationId,
+                DeathDateTime= animal.DeathDateTime
+
             };
             context.SendCreated(output);
         }
